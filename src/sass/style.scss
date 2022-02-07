@@ -1,0 +1,25 @@
+// normalize default styles
+@import "normalize";
+
+// Bootstrap
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+@import "bootstrap/grid";
+@import "bootstrap/navbar";
+
+// icons
+@import "icons";
+
+// variables
+@import "variables";
+
+// common styles
+@import "global";
+@import "typography";
+
+// pages
+@import "home";
+@import "products";
+@import "contact";
