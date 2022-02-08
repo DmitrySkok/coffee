@@ -1,6 +1,3 @@
-// normalize default styles
-@import "normalize";
-
 // Bootstrap
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -8,18 +5,22 @@
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
 @import "bootstrap/navbar";
+@import "bootstrap/nav";
 
 // icons
-@import "icons";
+@import "./partials/icons";
 
 // variables
-@import "variables";
+@import "./partials/variables";
 
 // common styles
-@import "global";
-@import "typography";
+@import "./partials/global";
+@import "./partials/typography";
 
 // pages
-@import "home";
-@import "products";
-@import "contact";
+@import "./partials/home";
+@import "./partials/products";
+@import "./partials/contact";
+
+//elements
+@import "./partials/header";
