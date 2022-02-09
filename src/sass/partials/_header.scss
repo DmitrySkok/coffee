@@ -12,6 +12,7 @@
   .logo {
     text-align: left;
     color: $color-light;
+    cursor: default;
   
     &-title {
       font-size: 36px;
@@ -31,6 +32,10 @@
       text-decoration: none;
       color: $color-light;
       padding-left: 5%;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.897);
+      }
     }
   }
 
@@ -43,6 +48,7 @@
     letter-spacing: 8px;
     color: $color-header;
     line-height: 1;
+
     &::after {
       position: absolute;
       content: '';
@@ -68,9 +74,11 @@
     transform: translateX(4%);
     letter-spacing: 18px;
   }
+
   .discover {
     color: $color-light;
     margin-top: 20%;
+
     h3 {
       font-weight: 400;
       letter-spacing: 4px;

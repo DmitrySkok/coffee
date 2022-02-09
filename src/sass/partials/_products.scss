@@ -1,0 +1,105 @@
+.products {
+  background-color: $color-light;
+  text-align: center;
+
+  &-wrapper {
+    padding: 85px 0 0 0;
+    div:nth-of-type(n+2) {
+      margin-bottom: 85px;
+      height: 422px;
+    }
+  }
+
+  &-header {
+    color: $color-header;
+    letter-spacing: 8px;
+    margin-bottom: 162px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -24.5%;
+      left: 50%;
+      width: 777px;
+      height: 6px;
+      transform: translateX(-50%);
+      background-color: $color-header;
+    }
+  } 
+}
+
+.product {
+  &-description {
+    text-align: left;
+    p {
+      padding: 0 23%;
+    }
+
+    span {
+      color: $color-header;
+    }
+
+    h3:nth-of-type(-n+1) {
+      padding-top: 5%;
+    }
+
+    h2:nth-of-type(-n+1) {
+      padding-top: 10%;
+    }
+  }
+
+  &-one {
+    &-image {
+      background: no-repeat url("../../images/coffee-1.png");
+    }
+
+    .product-description {
+      background: no-repeat url("../../images/mstpopular.png");
+      background-position: 75% 75%;
+    }
+
+    h2::after {
+      position: absolute;
+      content: '';
+      bottom: -58.5%;
+      left: 21.4%;
+      width: 109px;
+      height: 4px;
+      transform: translateX(-50%);
+      background-color: $color-header;
+    }
+  }
+
+  &-two {
+    &-image {
+      background: no-repeat url("../../images/coffee-2.png");
+    }
+
+    h2::after {
+      position: absolute;
+      content: '';
+      bottom: -112.6%;
+      left: 53.6%;
+      width: 109px;
+      height: 4px;
+      transform: translateX(-50%);
+      background-color: $color-header;
+    }
+  }
+  &-three {
+    &-image {
+      background: no-repeat url("../../images/coffee-3.png");
+    }
+
+    h2::after {
+      position: absolute;
+      content: '';
+      bottom: -166.7%;
+      left: 21.4%;
+      width: 109px;
+      height: 4px;
+      transform: translateX(-50%);
+      background-color: $color-header;
+    }
+  }
+}
