@@ -19,6 +19,10 @@ body {
   font-size: $size-base;
   line-height: 1.7;
   color: $color-dark;
+  cursor: default;
+  a {
+    cursor: pointer;
+  }
 }
 
 footer {
