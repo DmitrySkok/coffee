@@ -4,10 +4,6 @@
 
   &-wrapper {
     padding: 85px 0 0 0;
-    div:nth-of-type(n+2) {
-      margin-bottom: 85px;
-      height: 422px;
-    }
   }
 
   &-header {
@@ -48,6 +44,16 @@
     }
   }
 
+  &-one, &-two, &-three {
+    padding-bottom: 85px;
+  }
+
+  &-one-image, &-two-image, &-three-image {
+    height: 422px;
+    width: 553px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
   &-one {
     &-image {
       background: no-repeat url("../../images/coffee-1.png");
@@ -55,7 +61,7 @@
 
     .product-description {
       background: no-repeat url("../../images/mstpopular.png");
-      background-position: 75% 75%;
+      background-position: 73% 100%;
     }
 
     h2::after {
@@ -71,6 +77,8 @@
   }
 
   &-two {
+    justify-content: space-between;
+
     &-image {
       background: no-repeat url("../../images/coffee-2.png");
     }
@@ -86,6 +94,7 @@
       background-color: $color-header;
     }
   }
+
   &-three {
     &-image {
       background: no-repeat url("../../images/coffee-3.png");
