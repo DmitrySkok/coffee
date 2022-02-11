@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>El Tigre</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,21 +36,21 @@
 
   <section class="products">
     <div class="products-wrapper container">
-      <div class="products-header">
+      <div class="products-header" data-aos="zoom-in">
         <h1>products</h1>
       </div>
       <div class="product-one row">
-        <div class="product-description col-md-6">
+        <div class="product-description col-md-6" data-aos="fade-right" data-aos-duration="2000">
           <h2>01. la lagartija</h2>
           <p>Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.</p>
           <h3>Roasting: <span> 5/10 </span> </h3>
           <h3>Intensity: <span> 6/10 </span> </h3>
         </div>
-        <div class="product-one-image col-md-6"></div>
+        <div class="product-one-image col-md-6" data-aos="flip-right" data-aos-duration="2000"></div>
       </div>
       <div class="product-two row">
-        <div class="product-two-image col-md-6"></div>
-        <div class="product-description col-md-6">
+        <div class="product-two-image col-md-6" data-aos="flip-left" data-aos-duration="2000"></div>
+        <div class="product-description col-md-6" data-aos="fade-left" data-aos-duration="2000">
           <h2>02. EL TIGRE</h2>
           <p>Really dark coffee, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.</p>
           <h3>Roasting: <span> 8/10 </span> </h3>
@@ -57,30 +58,30 @@
         </div>
       </div>
       <div class="product-three row">
-        <div class="product-description col-md-6">
+        <div class="product-description col-md-6" data-aos="fade-right" data-aos-duration="2000">
           <h2>03. la cucaracha</h2>
           <p>Sweet and intense with a big amount of different flavors. Caramel,  grapes, strwaberry, you name it! It's great choice for warm summer days.</p>
           <h3>Roasting: <span> 3/10 </span> </h3>
           <h3>Intensity: <span> 7/10 </span> </h3>
         </div>
-        <div class="product-three-image col-md-6"></div>
+        <div class="product-three-image col-md-6" data-aos="flip-right" data-aos-duration="2000"></div>
       </div>
     </div>
   </section>
 
   <section class="about">
     <div class="container">
-      <h1>about us</h1>
-      <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
-      <p>Our coffees reflect us – young, wild and free. We are on the journey of new tastes...</p>
-      <p>Join us!</p>
+      <h1 data-aos="zoom-in">about us</h1>
+      <p data-aos="fade-down-right">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
+      <p data-aos="fade-up-left">Our coffees reflect us – young, wild and free. We are on the journey of new tastes...</p>
+      <p data-aos="fade-up">Join us!</p>
     </div>
   </section>
 
   <section class="contact">
     <div class="container">
-      <h1>contact us</h1>
-      <form>
+      <h1 data-aos="zoom-in">contact us</h1>
+      <form data-aos="fade-up" data-aos-duration="2000">
         <h3>name</h3>
         <input name="name" type="text" class="contact-input">
         <h3>title</h3>
@@ -112,6 +113,10 @@
 
   <footer class="copyright">© 2021 EL TIGRE inc.</footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>
