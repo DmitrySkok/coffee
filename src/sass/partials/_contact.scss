@@ -59,6 +59,8 @@
     font-weight: $font-bold;
     padding: 20px 40px;
     transition: all 1s;
+    cursor: pointer;
+
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
