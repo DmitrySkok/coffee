@@ -17,10 +17,8 @@
 @import "./partials/global";
 @import "./partials/typography";
 
-// pages
-@import "./partials/products";
-@import "./partials/contact";
-
-//elements
+//page sections
 @import "./partials/header";
+@import "./partials/products";
 @import "./partials/about";
+@import "./partials/contact";

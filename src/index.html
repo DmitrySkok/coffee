@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="container">
       <div class="header-wrapper row">
@@ -19,8 +21,9 @@
         </div>
         <div class="main-nav col-md-8">
           <a href="#home">home</a>
-          <a href="#products">products</a>
-          <a href="#contact">contact</a>
+          <a href="#products" class="scroll-to">products</a>
+          <a href="#about" class="scroll-to">about us</a>
+          <a href="#contact" class="scroll-to">contact</a>
         </div>
       </div>
       <div class="header-text">
@@ -34,7 +37,8 @@
     </div>
   </header>
 
-  <section class="products">
+  <!-- SECTION PRODUCTS -->
+  <section class="products" id="products">
     <div class="products-wrapper container">
       <div class="products-header" data-aos="zoom-in">
         <h1>products</h1>
@@ -69,7 +73,9 @@
     </div>
   </section>
 
-  <section class="about">
+
+  <!-- SECTION ABOUT -->
+  <section class="about" id="about">
     <div class="container">
       <h1 data-aos="zoom-in">about us</h1>
       <p data-aos="fade-down-right">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
@@ -78,7 +84,8 @@
     </div>
   </section>
 
-  <section class="contact">
+  <!-- SECTION CONTACT -->
+  <section class="contact" id="contact">
     <div class="container">
       <h1 data-aos="zoom-in">contact us</h1>
       <form data-aos="fade-up" data-aos-duration="2000">
@@ -93,7 +100,7 @@
     </div>
   </section>
 
-  <div id="pages">
+  <!-- <div id="pages">
     <section id="home">
       <div class="home-wrapper container"></div>
     </section>
@@ -103,14 +110,36 @@
     <section id="contact">
       <div class="contact-wrapper container"></div>
     </section>
-  </div>
+  </div> -->
 
-  <script id="template-home-page" type="text/x-handlebars-template"></script>
+  <!-- TEMPLATES PRODUCTS -->
+  <script id="template-product-left" type="text/x-handlebars-template">
+        <div class="product-one row">
+          <div class="product-description col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <h2>01. la lagartija {{ name }}</h2>
+            <p>{{ description }}Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.</p>
+            <h3>Roasting: <span> {{ roasting }}/10 </span> </h3>
+            <h3>Intensity: <span> {{ intensity }}/10 </span> </h3>
+          </div>
+          <div style="background: no-repeat url('{{ image }}');" class="product-one-image col-md-6" data-aos="flip-right" data-aos-duration="2000"></div>
+        </div>
+  </script>
 
-  <script id="template-products-page" type="text/x-handlebars-template"></script>
+  <script id="template-product-right" type="text/x-handlebars-template">
+    <div class="product-two row">
+      <div class="product-two-image col-md-6" data-aos="flip-left" data-aos-duration="2000"></div>
+      <div style="background: no-repeat url('{{ image }}');" class="product-description col-md-6" data-aos="fade-left" data-aos-duration="2000">
+        <h2>{{ name }}</h2>
+        <p>{{ description }}</p>
+        <h3>Roasting: <span> {{ roasting }}/10 </span> </h3>
+        <h3>Intensity: <span> {{ intensity }}/10 </span> </h3>
+      </div>
+    </div>
+  </script>
 
   <script id="template-contact-page" type="text/x-handlebars-template"></script>
 
+  <!-- FOOTER -->
   <footer class="copyright">© 2021 EL TIGRE inc.</footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
