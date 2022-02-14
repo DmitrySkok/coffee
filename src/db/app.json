@@ -1,1 +1,25 @@
-{} 
+{
+  "products": [
+    {
+      "name":"01. LA LAGARTIJA",
+      "description":"Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
+      "roasting":"5",
+      "intensity":"9",
+      "image": ""
+    },
+    {
+      "name":"02. EL TIGRE",
+      "description":"",
+      "roasting":"",
+      "intensity":"",
+      "image": ""
+    },
+    {
+      "name":"03. LA CUCARACHA",
+      "description":"",
+      "roasting":"",
+      "intensity":"",
+      "image": ""
+    }
+  ]
+}
