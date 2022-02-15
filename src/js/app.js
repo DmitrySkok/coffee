@@ -1,14 +1,18 @@
 import { settings } from './settings.js';
+import Products from './components/products.js';
 const app = {
   initData: function () {
+    const thisApp = this;
+
+    thisApp.data = {};
     const url = settings.db.url + '/' + settings.db.products;
-    this.data = {};
     fetch(url)
       .then((rawResponse) => {
         return rawResponse.json();
       })
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
+        thisApp.initProducts();
       });
   },
 
@@ -17,6 +21,17 @@ const app = {
 
     thisApp.initData();
     thisApp.scrollTo();
+  },
+
+  initProducts: function() {
+    const thisApp = this;
+
+    new Products(thisApp.data.products);
+    /* for (let productData in thisApp.data.products) {
+      // console.log(thisApp.data.products);
+      console.log(thisApp.data.products[productData]);
+      new Products(thisApp.data.products[productData]);
+    } */
   },
 
   scrollTo: function () {
@@ -33,7 +48,7 @@ const app = {
         });
       });
     }
-  }
+  },
 };
 
 app.init();
