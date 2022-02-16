@@ -20,10 +20,49 @@
       transform: translateX(-50%);
       background-color: $color-header;
     }
-  } 
+  }
+  
+  // &:nth-of-type(-n+1){
+  //   &::after {
+  //     position: absolute;
+  //     content: '';
+  //     bottom: -58.5%;
+  //     left: 21.4%;
+  //     width: 109px;
+  //     height: 4px;
+  //     transform: translateX(-50%);
+  //     background-color: $color-header;
+  //   }
+  // }
+  // &:nth-of-type(-n+2){
+  //   &::after {
+  //     position: absolute;
+  //     content: '';
+  //     bottom: -112.6%;
+  //     left: 53.6%;
+  //     width: 109px;
+  //     height: 4px;
+  //     transform: translateX(-50%);
+  //     background-color: $color-header;
+  //   }
+  // }
+  // &:nth-of-type(-n+3){
+  //   &::after {
+  //     position: absolute;
+  //     content: '';
+  //     bottom: -166.7%;
+  //     left: 21.4%;
+  //     width: 109px;
+  //     height: 4px;
+  //     transform: translateX(-50%);
+  //     background-color: $color-header;
+  //   }
+  // }
 }
 
 .product {
+  padding-bottom: 85px;
+
   &-description {
     text-align: left;
 
@@ -44,71 +83,9 @@
     }
   }
 
-  &-one, &-two, &-three {
-    padding-bottom: 85px;
-  }
-
-  &-one-image, &-two-image, &-three-image {
+  &-image {
     height: 422px;
     width: 553px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  &-one {
-    &-image {
-      background: no-repeat url("../../images/coffee-1.png");
-    }
-
-    .product-description {
-      background: no-repeat url("../../images/mstpopular.png");
-      background-position: 73% 100%;
-    }
-
-    h2::after {
-      position: absolute;
-      content: '';
-      bottom: -58.5%;
-      left: 21.4%;
-      width: 109px;
-      height: 4px;
-      transform: translateX(-50%);
-      background-color: $color-header;
-    }
-  }
-
-  &-two {
-    justify-content: space-between;
-
-    &-image {
-      background: no-repeat url("../../images/coffee-2.png");
-    }
-
-    h2::after {
-      position: absolute;
-      content: '';
-      bottom: -112.6%;
-      left: 53.6%;
-      width: 109px;
-      height: 4px;
-      transform: translateX(-50%);
-      background-color: $color-header;
-    }
-  }
-
-  &-three {
-    &-image {
-      background: no-repeat url("../../images/coffee-3.png");
-    }
-
-    h2::after {
-      position: absolute;
-      content: '';
-      bottom: -166.7%;
-      left: 21.4%;
-      width: 109px;
-      height: 4px;
-      transform: translateX(-50%);
-      background-color: $color-header;
-    }
   }
 }

@@ -48,7 +48,7 @@
       <div class="products-header" data-aos="zoom-in">
         <h1>products</h1>
       </div>
-      <div class="product-one row">
+      <!-- <div class="product-one row">
         <div class="product-description col-md-6" data-aos="fade-right" data-aos-duration="2000">
           <h2>01. la lagartija</h2>
           <p>Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.</p>
@@ -74,7 +74,7 @@
           <h3>Intensity: <span> 7/10 </span> </h3>
         </div>
         <div class="product-three-image col-md-6" data-aos="flip-right" data-aos-duration="2000"></div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -105,33 +105,21 @@
     </div>
   </section>
 
-  <!-- <div id="pages">
-    <section id="home">
-      <div class="home-wrapper container"></div>
-    </section>
-    <section id="products">
-      <div id="products-list" class="products-list container"></div>
-    </section>
-    <section id="contact">
-      <div class="contact-wrapper container"></div>
-    </section>
-  </div> -->
-
   <!-- TEMPLATE PRODUCTS -->
   <script id="template-product" type="text/x-handlebars-template">
-        <div class="product row">
-          {{ #if imageLeft }}
+        <div class="product row" {{#if imageLeft}} style="justify-content: space-between;" {{/if}}>
+          {{#if imageLeft}}
           <div style="background: no-repeat url('{{ image }}');" class="product-image col-md-6" data-aos="flip-left" data-aos-duration="2000"></div>
-          {{ /if }}
-          <div class="product-description col-md-6" data-aos="fade-right" data-aos-duration="2000">
+          {{/if}}
+          <div {{#if mostPopular}} style="background: no-repeat url('../../images/mstpopular.png'); background-position: 73% 100%;" {{/if}} class="product-description col-md-6" data-aos="fade-right" data-aos-duration="2000">
             <h2>{{ name }}</h2>
             <p>{{ description }}</p>
             <h3>Roasting: <span> {{ roasting }}/10 </span></h3>
             <h3>Intensity: <span> {{ intensity }}/10 </span></h3>
           </div>
-          {{ #if !imageLeft }}
+          {{#if imageRight}}
           <div style="background: no-repeat url('{{ image }}');" class="product-image col-md-6" data-aos="flip-right" data-aos-duration="2000"></div>
-          {{ /if }}
+          {{/if}}
         </div>
   </script>
 

@@ -6,7 +6,8 @@
       "roasting":5,
       "intensity":9,
       "image": "../../images/coffee-1.png",
-      "imageLeft": false
+      "imageRight": true,
+      "mostPopular": true
     },
     {
       "name":"02. EL TIGRE",
@@ -22,7 +23,7 @@
       "roasting":3,
       "intensity":7,
       "image": "../../images/coffee-3.png",
-      "imageLeft": false
+      "imageRight": true
     }
   ]
 }

@@ -25,13 +25,8 @@ const app = {
 
   initProducts: function() {
     const thisApp = this;
-
+    
     new Products(thisApp.data.products);
-    /* for (let productData in thisApp.data.products) {
-      // console.log(thisApp.data.products);
-      console.log(thisApp.data.products[productData]);
-      new Products(thisApp.data.products[productData]);
-    } */
   },
 
   scrollTo: function () {
